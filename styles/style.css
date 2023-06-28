@@ -96,3 +96,15 @@
   grid-column: 1/ 2;
   grid-row: 7/9;
 }
+
+img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.dashboard-title,
+.content-navigation,
+.user-account {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
