@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  --bg-color-sidebar: #4361ee;
+  --font-color-sidebar: #fff;
 }
 
 .container {
@@ -20,9 +22,13 @@
 .sidebar {
   grid-area: 1 / 1 / 3 / 2;
   display: grid;
-  grid-template-rows: 1fr 3fr 6fr;
   padding: 1rem;
-  background-color: #5b21b6;
+  background-color: var(--bg-color-sidebar);
+  color: var(--font-color-sidebar);
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-content: start;
+  gap: 60px;
 }
 
 .main-content {
@@ -100,11 +106,6 @@
   grid-row: 7/9;
 }
 
-img {
-  height: 2rem;
-  width: 2rem;
-}
-
 .dashboard-title,
 .content-navigation,
 .user-account {
@@ -113,4 +114,15 @@ img {
   align-content: start;
   align-items: center;
   gap: 1rem;
+}
+
+.material-symbols-rounded {
+  color: #fff;
+  font-size: 2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
