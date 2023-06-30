@@ -3,7 +3,7 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
   --bg-color-sidebar: #000;
-  --bg-color-header: #545456;
+  --bg-color-header: #646464;
   --font-color-white: #fff;
   --padding-sidebar: 1rem;
   --padding-header: 2rem;
@@ -25,6 +25,7 @@
   background-color: var(--bg-color-header);
   color: var(--font-color-white);
   gap: 1.2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 input {
@@ -56,18 +57,18 @@ input {
 
 .search {
   display: grid;
-  grid-template-columns: 50px 800px 50px 1fr 6fr;
+  grid-template-columns: 50px 800px 50px 50px 1fr;
   gap: 10px;
 }
 
 .search > .material-symbols-rounded {
   cursor: pointer;
-  justify-self: end;
+  justify-self: center;
 }
 
 .search .apple-logo {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   justify-self: center;
 }
 
@@ -78,13 +79,34 @@ input {
 
 .greeting {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1.5fr 1fr;
+  gap: 10px;
+}
+
+.logo-title {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* justify-self: start; */
 }
 
 .greeting .apple-logo {
   width: 60px;
   height: 60px;
   justify-self: center;
+}
+
+.buttons {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.buttons > button {
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+  /* width: 150px; */
+  height: 30px;
 }
 
 .projects-container {
