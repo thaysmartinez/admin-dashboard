@@ -5,7 +5,7 @@
   --bg-color-sidebar: #ee6352;
   --bg-color-header: #08b2e3;
   --font-color-white: #fff;
-  --padding-sidebar: 1rem;
+  --padding-sidebar: 1.2rem;
   --padding-header: 2rem;
 }
 
@@ -56,7 +56,7 @@ input {
   grid-area: 2 / 2 / 3 / 3;
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   padding: 2rem;
   gap: 2rem;
 }
@@ -132,8 +132,8 @@ input {
 
 .projects-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(440px, 480px));
-  grid-template-rows: repeat(auto-fill, 250px);
+  grid-template-columns: repeat(auto-fit, minmax(440px, auto));
+  grid-template-rows: repeat(auto-fill, minmax(250px, auto));
   gap: 40px;
 }
 
@@ -161,7 +161,6 @@ article {
   grid-template-rows: repeat(autofit, 1fr);
   display: grid;
   align-items: start;
-  /* gap: 15px; */
   background-color: #fff;
   padding: 25px;
   border-radius: 12px;
@@ -191,6 +190,22 @@ article {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: repeat(8, 1fr);
+  background-color: #fff;
+  column-gap: 15px;
+  padding: 25px;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.trending-container img {
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.trending-content p:nth-child(3n + 3) {
+  color: grey;
 }
 
 .icon-1 {
